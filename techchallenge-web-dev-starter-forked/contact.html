@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web Development Tech Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation Section-->
+    <header class="header">
+      <img
+        class="logo"
+        src="assets/logo.png"
+        alt="Image"
+        width="80px"
+        height="80px"
+      />
+      <h3 id="my-hour"></h3>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="royal-family.html">Royal Family</a></li>
+          <li><a href="assets.html">Royal Assets</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="form">Please fill in the form to contact us</p>
+    <form id="contactForm">
+      <label for name="Name"> Who's contacting us?</label><br />
+      <input
+        type="text"
+        id="Name"
+        name="Nom"
+        value=""
+        placeholder="Enter your name"
+      /><br />
+      <label for name="Email">Where to reply?</label><br />
+      <input
+        type="email"
+        id="Email"
+        name="mail"
+        value=""
+        placeholder="Enter your email"
+      />
+      <br />
+      <label for name="phone">Where can we call you ?</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="telephone"
+        value=""
+        placeholder="0123456789"
+      /><br />
+      <label for name="Message">Your message : </label><br />
+      <textarea
+        id="Message"
+        name="message"
+        value=""
+        placeholder="Enter  your message"
+      ></textarea
+      ><br />
+      <input type="submit" value="Send" class="btn" />
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
