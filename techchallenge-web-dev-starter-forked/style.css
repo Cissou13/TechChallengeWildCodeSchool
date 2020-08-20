@@ -20,6 +20,10 @@ body {
   color: white;
   text-decoration: underline;
 }
+.logo {
+  border: solid 0.2rem black;
+  margin-right: 1rem;
+}
 li {
   margin: 0 5rem;
   font-size: 1.7rem;
@@ -28,10 +32,6 @@ li {
 a {
   text-decoration: none;
   color: yellow;
-}
-.logo {
-  border: solid 0.2rem black;
-  margin-right: 1rem;
 }
 .form {
   text-align: center;
@@ -142,25 +142,28 @@ textarea::placeholder {
 .btn:hover {
   background-color: rgba(245, 143, 9);
 }
+td,
+th {
+  border: 3px solid black;
+}
+table {
+  border-collapse: collapse;
+}
 .thead-assets tr {
   font-size: 1.5rem;
-  display: flex;
-  width: 40rem;
-  justify-content: space-around;
   border: 1px black solid;
+  background-color: #979797;
 }
 .tbody-assets {
   font-size: 2rem;
 }
-.trow-assets {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid yellow;
+.tbody-assets td {
+  height: 3rem;
+  padding: 0 8rem;
+  text-align: center;
 }
-.trow-assets td {
-  border: 1px solid red;
-  height: 2rem;
-  text-align: right;
+.silver {
+  background-color: #e9e9e9;
 }
 @keyframes animate {
   0% {
