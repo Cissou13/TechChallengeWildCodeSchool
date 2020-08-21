@@ -1,3 +1,5 @@
+/* Timer */
+
 setInterval(function getTime() {
   let date = new Date();
   let hours = date.getHours();
@@ -10,9 +12,11 @@ setInterval(function getTime() {
   myHour.textContent = 'Current time in Colchis : ' + hours + minutes + seconds;
 }, 1000);
 
+/* Form Warning pop-up */
 const message = 'Thanks you for contacting us, we will come back to you soon !';
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault();
-  alert(message);
-});
+document
+  .getElementById('contactForm')
+  .addEventListener('submit', function (event) {
+    alert(message);
+  });
